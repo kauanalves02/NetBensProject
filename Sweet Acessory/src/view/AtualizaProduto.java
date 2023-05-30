@@ -126,6 +126,9 @@ public class AtualizaProduto extends javax.swing.JFrame {
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
         Produto c = new Produto();
+        
+        
+        c.setId(Integer.parseInt(campoId.getText()));
         int id = Integer.parseInt(campoId.getText());
         new ProdutoDAO().excluir(c);
         ListaProduto p = new ListaProduto();

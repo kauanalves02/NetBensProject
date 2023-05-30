@@ -105,6 +105,8 @@ public class CadastroProduto extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        campoMateriais.getAccessibleContext().setAccessibleName("Materias");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -138,7 +140,7 @@ public class CadastroProduto extends javax.swing.JFrame {
         
         new ProdutoDAO().inserir(c);
         
-        JOptionPane.showMessageDialog(null,"Produto renovado");
+        JOptionPane.showMessageDialog(null,"Produto cadastrado");
         campoMateriais.setText("");
         campoValores.setText("");
     }//GEN-LAST:event_btnCadastrarActionPerformed

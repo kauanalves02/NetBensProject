@@ -63,7 +63,7 @@ public class ProdutoDAO {
     }
 
     public void excluir(Produto c) {
-        String sql = "DELETE FROM contato WHERE id=?";
+        String sql = "DELETE FROM produto WHERE id=?";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setInt(1, c.getId());

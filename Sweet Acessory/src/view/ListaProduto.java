@@ -159,7 +159,6 @@ public class ListaProduto extends javax.swing.JFrame {
          c.setId(id);
          c.setMateriais(materiais);
          c.setValores(valores);
-         
          AtualizaProduto ac = new AtualizaProduto();
          ac.setVisible(true);
          ac.setForm(c);
